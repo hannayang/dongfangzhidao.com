@@ -1,0 +1,95 @@
+/*
+ * 通用样式
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { margin: 0; font-size: 12px; font: 12px/1.5 tahoma, arial, \5b8b\4f53; background: #fff; height: 100%; cursor: default; }
+input { font-size: 12px; font-family: Verdana; outline: none; }
+table { font-size: 12px; }
+#Wrapper { width: 1024px; margin: 0 auto; }
+
+/*Header*/
+#Header { height: 130px; background: url(images/logo.png) 10px 13px no-repeat; }
+#Address { padding: 85px 0 0 130px; }
+#Tel { color: #fff; text-align: left; background: url(images/tel.png); width: 153px; height: 56px; position: absolute; top: 0; right: 40px; margin-right: 100px; background-color: #802821; border-radius: 0 0 10px 10px; z-index: 1000; }
+#Tel .intro { font-size: 14px; }
+#Tel .tel-num { font-size: 18px; }
+#Main { border-bottom: 1px #ccc solid; padding-bottom: 20px; }
+#Footer { line-height: 24px; padding: 10px 18px; color: #666; text-align: center; }
+#Footer a { color: #666; }
+#Slogen { position: absolute; top: 20px; right: 460px; background: url(images/slogen.png); width: 228px; height: 45px; }
+#Weibo { background: url(images/icon-cooperation.jpg) 0px -1px no-repeat; padding-left: 28px; position: absolute; top: 80px; right: 143px; }
+
+/*左右栏*/
+#Left { float: left; width: 250px; padding: 0px 10px; }
+#Right { margin-left: 270px; }
+
+/*Left*/
+/*关于*/
+aside h2 { margin-bottom: 10px; padding-left: 30px; background: url(images/bollut.png) 0 3px no-repeat; font-size: 14px; color: #393526; line-height: 30px; border-bottom: dotted 1px #ccc; }
+aside section .detail { padding: 0 20px; }
+aside ul { list-style-position: inside; }
+aside section .detail li { line-height: 22px; }
+aside strong { color: #802821; font-weight: bold; }
+
+/*Map*/
+#ThumbMap { margin: 20px 0 0 10px; width: 202px; height: 196px; border: solid 1px #ccc; padding: 0 10px; background: url(images/minimap.png) -4px center no-repeat; }
+#OpenMap { display: block; }
+.zoomInBtn { text-align: center; }
+.side-widgets { margin-top: 22px; }
+
+/*特色*/
+#Features { padding-top: 8px; }
+
+/*Right*/
+#PhotoShow { height: 300px; }
+
+/*Slides Show*/
+#Photos { height: 349px; position: relative; }
+#PhotoSlides { width: 100%; position: absolute; top: 0px; left: 4px; z-index: 100; }
+.slides_container { width: 750px; overflow: hidden; position: relative; display: none; }
+.slides_container a { width: 570px; height: 270px; display: block; }
+.slides_container a img { display: block; }
+
+#PhotoSlides .next, #PhotoSlides .prev { position: absolute; top: 107px; left: 39px; width: 24px; height: 43px; display: block; z-index: 101; }
+#PhotoSlides .next { left: 585px; }
+
+.pagination { margin: 10px auto 0; width: 200px; }
+.pagination li { float: left; margin: 0 0 0 10px; list-style: none; }
+.pagination li a { display: block; width: 12px; height: 0; padding-top: 12px; background-image: url(images/pagination.png); background-position: 0 0; float: left; overflow: hidden; }
+.pagination li.current a { background-position: 0 -12px; }
+
+#Photos a:link, #Photos a:visited { color: #802821; text-decoration: none; }
+#Photos a:hover, #Photos a:active { color: #802821; text-decoration: underline; }
+
+/*房价*/
+.right-wide h2 { margin-bottom: 10px; padding-left: 30px; background: url(images/bollut.png) 0 3px no-repeat; margin-top: 30px; margin-bottom: 5px; font-size: 14px; color: #393526; line-height: 30px; border-bottom: dotted 1px #ccc; }
+#RoomDate { display: none; float: right; font-size: 12px; font-weight: normal; }
+.order { width: 700px; background-color: #802821; padding: 5px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.order-border { background-color: #fff; padding: 5px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.order table { width: 100%; }
+.order table tr.table-header { background-color: #f8f8f8; color: #777; }
+#OrderList .order table th { text-align: left; padding-left: 10px; font-weight: normal; line-height: 24px; }
+.order table td { text-align: left; padding-left: 10px; line-height: 35px; border-bottom: dotted 1px #d3d3d3; }
+.order table td.have-room { color: #00af00; }
+.order table td.no-room { color: #d20000; }
+.order table td.price { font-size: 20px; color: #ff7200; }
+.order table td.price i { font-size: 12px; font-style: normal; padding-right: 2px; }
+
+.button { display: inline-block; outline: none; cursor: pointer; text-align: center; text-decoration: none; font: 14px/100% Arial, Helvetica, sans-serif; padding: .5em 2em .55em; text-shadow: 0 1px 1px); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+.button:hover { text-decoration: none; }
+.orange { color: #fef4e9; border: solid 1px #da7c0c; background: #f78d1d; background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20)); background: -moz-linear-gradient(top,  #faa51a,  #f47a20); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20'); }
+.orange:hover { background: #f47c20; background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015)); background: -moz-linear-gradient(top,  #f88e11,  #f06015); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015'); }
+.orange:active { color: #fcd3a5; background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a)); background: -moz-linear-gradient(top,  #f47a20,  #faa51a); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a'); }
+.gray { cursor: default; color: #e9e9e9; border: solid 1px #555; background: #6e6e6e; background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757)); background: -moz-linear-gradient(top,  #888,  #575757); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757'); }
+.medium { font-size: 12px; padding: .4em 1.5em .42em; }
+
+/*设施*/
+.widgets-content { padding: 0 20px; }
+.widgets-content table th { font-weight: normal; padding-right: 5px; color: #802821; text-align: right; width: 120px; vertical-align: top; }
+.widgets-content table ul { padding-left: 10px; }
+.widgets-content table ul li { width: 120px; list-style: none; background: url(images/sel.gif) 0 5px no-repeat; padding-left: 20px; line-height: 24px; }
+.widgets-content table ul li.empty { background: none; }
+
+/*景点*/
+#Sights th { text-align: left; width: 120px; }
